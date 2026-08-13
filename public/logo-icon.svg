@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Sleek Dark Container with subtle border so it stands out in both Dark and Light browser tabs -->
+  <rect width="512" height="512" rx="112" fill="#090A0B" />
+  <rect x="8" y="8" width="496" height="496" rx="104" stroke="#1D2025" stroke-width="8" />
+
+  <defs>
+    <!-- Rich Cobalt/Royal Blue Gradients for the "M" -->
+    <linearGradient id="fav-vm-b-l" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#0047D4" />
+    </linearGradient>
+    <linearGradient id="fav-vm-b-r" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0072FF" />
+      <stop offset="100%" stop-color="#004AD6" />
+    </linearGradient>
+    <linearGradient id="fav-vm-b-c" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0055F0" />
+      <stop offset="100%" stop-color="#0035A8" />
+    </linearGradient>
+
+    <!-- White "V" Ribbon Gradients -->
+    <linearGradient id="fav-vm-w-l" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="85%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="fav-vm-w-r" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="80%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+    <linearGradient id="fav-vm-w-f" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <!-- Overlap Shadow -->
+    <filter id="fav-vm-sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <g transform="translate(106, 96) scale(1.0)">
+    <!-- Blue "M" Structure -->
+    <polygon points="55,70 95,130 95,195 55,215" fill="url(#fav-vm-b-l)" />
+    <polygon points="245,70 205,130 205,195 245,215" fill="url(#fav-vm-b-r)" />
+    <polygon points="100,50 150,140 200,50 172,50 150,96 128,50" fill="url(#fav-vm-b-c)" />
+    <polygon points="55,70 100,50 128,50 95,130" fill="url(#fav-vm-b-l)" />
+    <polygon points="245,70 200,50 172,50 205,130" fill="url(#fav-vm-b-r)" />
+
+    <!-- White "V" Origami Ribbon Structure with drop shadow -->
+    <polygon points="35,45 85,45 150,195 130,215 110,215" fill="url(#fav-vm-w-l)" filter="url(#fav-vm-sh)" />
+    <polygon points="265,45 215,45 150,195 170,215 190,215" fill="url(#fav-vm-w-r)" filter="url(#fav-vm-sh)" />
+    <polygon points="35,45 85,45 150,195 100,195" fill="url(#fav-vm-w-l)" />
+    <polygon points="265,45 215,45 150,195 200,195" fill="url(#fav-vm-w-r)" />
+    <polygon points="150,195 130,215 170,215" fill="url(#fav-vm-w-f)" />
+    <polygon points="215,45 265,45 235,95 205,95" fill="#FFFFFF" />
+    <polygon points="35,45 85,45 115,95 65,95" fill="#F8FAFC" />
+  </g>
+</svg>

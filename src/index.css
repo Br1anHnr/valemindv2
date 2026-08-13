@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #090A0B;
+    --foreground: #F5F5F5;
+    --card: #111316;
+    --card-foreground: #F5F5F5;
+    --border: #1D2025;
+  }
+}
+
+body {
+  font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #090A0B;
+  color: #F5F5F5;
+  overflow-x: hidden;
+  letter-spacing: -0.015em;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Geist', 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+code, pre, .font-mono {
+  font-family: 'Geist Mono', monospace;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar - Minimalist Dark */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1D2025;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3139;
+}
+
+/* Minimalist Grid Pattern (Ultra-low contrast) */
+.bg-grid-pattern {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+}
+
+/* Discreet Surface Panel */
+.surface-card {
+  background-color: #111316;
+  border: 1px solid #1D2025;
+  border-radius: 12px;
+}
+
+.surface-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.surface-card-hover:hover {
+  border-color: #2D3139;
+  background-color: #14171B;
+}
