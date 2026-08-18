@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ValeMindSymbol } from "@/components/valemind-symbol"
 import { ArrowRight, ChevronDown, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Spotlight } from "@/components/ui/spotlight"
+import { SplineScene } from "@/components/ui/splite"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -124,6 +126,25 @@ export function HeroScrollReveal({ onOpenBooking, heroVariant = "symbol-above" }
       >
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
+
+        {/* Interactive Cursor Spotlight */}
+        <Spotlight
+          className="-top-40 left-0 md:left-60 md:-top-20"
+          size={400}
+        />
+
+        {/* 3D Spline Robot Background Layer */}
+        <div className="absolute inset-0 z-0 flex items-center justify-end overflow-hidden opacity-90 lg:opacity-100 pointer-events-auto">
+          <div className="w-full h-full lg:w-[55%] lg:h-[110%] relative lg:-right-10">
+            <SplineScene 
+              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              className="w-full h-full"
+            />
+            {/* Gradient overlays for smooth text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#090A0B] via-[#090A0B]/50 to-transparent pointer-events-none lg:block hidden" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#090A0B] via-transparent to-[#090A0B]/60 pointer-events-none lg:hidden block" />
+          </div>
+        </div>
 
         {/* Ambient Subtle Light behind Logo (Very discreet) */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[100px] pointer-events-none" />
