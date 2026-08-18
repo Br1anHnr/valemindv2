@@ -1,11 +1,16 @@
 import React from 'react';
 import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card";
-import { ASMRStaticBackground } from './asmr-background';
+import { Spotlight } from "@/components/ui/spotlight";
 
 export function SplineSceneBasic() {
   return (
     <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        size={300}
+      />
+      
       <div className="flex h-full">
         {/* Left content */}
         <div className="flex-1 p-8 relative z-10 flex flex-col justify-center">
@@ -13,7 +18,8 @@ export function SplineSceneBasic() {
             Interactive 3D
           </h1>
           <p className="mt-4 text-neutral-300 max-w-lg">
-            Bring your UI to life with beautiful 3D scenes. Powered by Spline and modern web technologies.
+            Bring your UI to life with beautiful 3D scenes. Create immersive experiences 
+            that capture attention and enhance your design.
           </p>
         </div>
 
@@ -28,17 +34,5 @@ export function SplineSceneBasic() {
     </Card>
   );
 }
-
-export const ASMRDemo: React.FC = () => {
-  return (
-    <div className="relative w-full min-h-screen bg-[#090A0B]">
-      <ASMRStaticBackground />
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-8 text-center">
-        <h1 className="text-3xl font-bold text-white mb-2">Atmospheric Friction</h1>
-        <p className="text-zinc-400 text-sm">Interactive Kinetic Background Active</p>
-      </div>
-    </div>
-  );
-};
 
 export default SplineSceneBasic;

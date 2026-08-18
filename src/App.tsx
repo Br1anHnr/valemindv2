@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { HeroScrollReveal } from "@/components/hero-scroll-reveal"
+import { SplineSceneBasic } from "@/components/ui/demo"
 import { HubSolutionsSection } from "@/components/hub-solutions"
 import { EngineeringPracticesSection } from "@/components/engineering-practices"
 import { BentoEcosystemSection } from "@/components/bento-ecosystem"
@@ -38,8 +39,13 @@ export function App() {
 
       {/* 5 Master Blocks */}
       <main className="flex-grow relative z-10">
-        {/* BLOCO 1: Hero Cinematográfica Ágil (Scroll Reveal com GSAP + ScrollTrigger) */}
+        {/* BLOCO 1: Hero Cinematográfica Ágil */}
         <HeroScrollReveal onOpenBooking={handleOpenContact} />
+
+        {/* 3D Interactive Card do Prompt */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 relative z-20">
+          <SplineSceneBasic />
+        </div>
 
         {/* BLOCO 2: Hub Interativo de Soluções & Posicionamento */}
         <HubSolutionsSection

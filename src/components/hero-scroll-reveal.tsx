@@ -15,6 +15,9 @@ interface HeroScrollRevealProps {
   heroVariant?: "symbol-above" | "watermark"
 }
 
+// Cole aqui o link da cena 3D do seu robô no Spline (Export -> Public URL / Viewer)
+export const SPLINE_ROBOT_SCENE = "https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"
+
 export function HeroScrollReveal({ onOpenBooking, heroVariant = "symbol-above" }: HeroScrollRevealProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const pinRef = useRef<HTMLDivElement>(null)
