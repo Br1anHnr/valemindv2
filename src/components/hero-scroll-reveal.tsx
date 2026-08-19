@@ -140,7 +140,7 @@ export function HeroScrollReveal({ onOpenBooking, heroVariant = "symbol-above" }
         <div className="absolute inset-0 z-0 flex items-center justify-end overflow-hidden opacity-90 lg:opacity-100 pointer-events-auto">
           <div className="w-full h-full lg:w-[55%] lg:h-[110%] relative lg:-right-10">
             <SplineScene 
-              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"
               className="w-full h-full"
             />
             {/* Gradient overlays for smooth text readability */}

@@ -8,7 +8,6 @@ import { BentoEcosystemSection } from "@/components/bento-ecosystem"
 import { CtaFinalSection } from "@/components/cta-final"
 import { Footer } from "@/components/footer"
 import { ContactModal } from "@/components/contact-modal"
-import { ASMRStaticBackground } from "@/components/ui/asmr-background"
 
 export function App() {
   const [contactModalOpen, setContactModalOpen] = useState(false)
@@ -28,9 +27,6 @@ export function App() {
 
   return (
     <div className="relative min-h-screen bg-[#090A0B] text-[#F5F5F5] flex flex-col selection:bg-neutral-800 selection:text-white">
-      {/* Interactive ASMR Static Particle Background with Magnetic Vortex */}
-      <ASMRStaticBackground particleCount={700} />
-
       {/* 0. Top Header with Motion Navigation & Reactive Tab Switching */}
       <Navbar
         onOpenBooking={handleOpenContact}
