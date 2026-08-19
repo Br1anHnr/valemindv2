@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Navbar } from "@/components/navbar"
-import { HeroScrollReveal } from "@/components/hero-scroll-reveal"
-import { SplineSceneBasic } from "@/components/ui/demo"
+import { Hero } from "@/components/hero"
 import { HubSolutionsSection } from "@/components/hub-solutions"
 import { EngineeringPracticesSection } from "@/components/engineering-practices"
 import { BentoEcosystemSection } from "@/components/bento-ecosystem"
@@ -26,7 +25,7 @@ export function App() {
   }
 
   return (
-    <div className="relative min-h-screen bg-[#090A0B] text-[#F5F5F5] flex flex-col selection:bg-neutral-800 selection:text-white">
+    <div className="relative min-h-screen bg-[#090A0B] text-[#F5F5F5] flex flex-col selection:bg-neutral-800 selection:text-white overflow-x-hidden">
       {/* 0. Top Header with Motion Navigation & Reactive Tab Switching */}
       <Navbar
         onOpenBooking={handleOpenContact}
@@ -35,13 +34,8 @@ export function App() {
 
       {/* 5 Master Blocks */}
       <main className="flex-grow relative z-10">
-        {/* BLOCO 1: Hero Cinematográfica Ágil */}
-        <HeroScrollReveal onOpenBooking={handleOpenContact} />
-
-        {/* 3D Interactive Card do Prompt */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 relative z-20">
-          <SplineSceneBasic />
-        </div>
+        {/* BLOCO 1: Hero Principal com Robô 3D Interativo e Spotlight */}
+        <Hero onOpenBooking={handleOpenContact} />
 
         {/* BLOCO 2: Hub Interativo de Soluções & Posicionamento */}
         <HubSolutionsSection
